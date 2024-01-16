@@ -1,31 +1,37 @@
 ---
 - id: license-check-configuration-lint
   name: Check the configuration files for pre-commit-license-check.
-  description: This hook scans the the gradle dependency list againt a configured list of allowed open source licenses.
+  description: This hook scans the the gradle dependency list against a configured list of allowed open source licenses.
   entry: license-check-configuration-lint
   files: '.*license-check.*\.yaml'
   language: python
 - id: license-check-gradle
   name: Check the licenses of the gradle environment.
-  description: This hook scans the the gradle dependency list againt a configured list of allowed open source licenses.
+  description: This hook scans the the gradle dependency list against a configured list of allowed open source licenses.
   entry: license-check-gradle
   files: build.gradle
   language: python
 - id: license-check-maven
   name: Check the licenses of the maven environment.
-  description: This hook scans the the maven dependency list againt a configured list of allowed open source licenses.
+  description: This hook scans the the maven dependency list against a configured list of allowed open source licenses.
   entry: license-check-maven
   files: pom.xml
   language: python
 - id: license-check-npm
   name: Check the licenses of the npm environment.
-  description: This hook scans the package. a configured list of allowed open source licenses.
+  description: This hook scans the node_modules directory against a configured list of allowed open source licenses.
   entry: license-check-npm
-  files: package.json
+  files: node_modules/*
   language: python
 - id: license-check-pipenv
   name: Check the licenses of the pipenv environment
   description: This hook scans the local Pipfile against a configured list of allowed open source licenses.
   entry: license-check-pipenv
   files: Pipfile
+  language: python
+- id: license-check-yarn
+  name: Check the licenses of the yarn environment
+  description: This hook scans the local yarn.lock file against a configured list of allowed open source licenses.
+  entry: license-check-yarn
+  files: node_modules/*
   language: python

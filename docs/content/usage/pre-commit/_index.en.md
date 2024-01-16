@@ -21,6 +21,7 @@ repos:
       - id: license-check-maven
       - id: license-check-npm
       - id: license-check-pipenv
+      - id: license-check-yarn
 ```
 
 ### Available Hooks

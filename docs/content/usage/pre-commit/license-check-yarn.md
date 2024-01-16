@@ -1,5 +1,5 @@
 ---
-title: "license-check-npm"
+title: "license-check-yarn"
 weight: 40
 ---
 
@@ -9,5 +9,5 @@ weight: 40
 
 ### More info
 
-* [npm](https://www.npmjs.com/)
+* [yarn] (https://yarnpkg.com/)
 * [license-checker](https://www.npmjs.com/package/license-checker)

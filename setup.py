@@ -33,6 +33,7 @@ setup(
             'license-check-maven = kontrolilo.maven:main',
             'license-check-npm = kontrolilo.npm:main',
             'license-check-pipenv = kontrolilo.pipenv:main',
+            'license-check-yarn = kontrolilo.yarn:main',
         ],
     },
     dependency_links=[],
